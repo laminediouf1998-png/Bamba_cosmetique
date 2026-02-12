@@ -1,0 +1,10 @@
+cheveux;lam;4;excellent
+Crème visage;lam;5;Excellent
+Crème visage;lam;5;Excellent
+Crème visage;lam;5;bien
+Crème visage;lam;5;cool
+Crème visage;lam;5;cool
+Crème visage;lam;2;bien
+Crème visage;lam;2;bien
+Crème visage;bien;5;ce parfum est exceptionnel, c'est ce que que j'utilise tout le temps
+Huile essentielle;test;5;waoh, that's wonderful !

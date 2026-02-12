@@ -1,0 +1,4 @@
+pradise;25;odeur pradisiaque;produit5
+parfun chambre;12;faite pour chambre et dure 24h/24;produit2
+Aldiana;45;VIP;produit1
+cheveux;5;pour teint clair;produit3

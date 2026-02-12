@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <title>page d'entrainnement</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" type="css/tyle.css">
+        
+    </head>
+    <body>
+        <h1>Practice</h1>
+        <style>
+            h1,h2,h3{
+                color: blue;
+            }
+           
+            ol,ul,.exemple,#idd {
+                background-color: #ccc;
+                text-align: center;
+                color: #e80d0d;
+                
+                
+            }
+            .table::before {
+  content: "⚠️ Info : ";
+  color: #007BFF;
+  font-weight: bold;
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  font-size: 16px;
+  background-color: white;
+  padding: 2px 8px;
+  border: 1px solid #007BFF;
+  border-radius: 4px;
+}
+           
+            body{
+                text-align: center;
+            }
+        
+        </style>
+       
+
+                   
+
+                    <p class="test" id="teste"><mark>hello word ! </mark>comment allez-vous ? </p> <!--zone mark    -->
+                    <h2>Explication</h2>
+                    <p>C'est en forrgeant qu'on devient forgerons</p>
+                    <hr> <!-- bare horizontale --> 
+                    <p><b><i>wouh ! génial !</i></b></p>
+                    <p>maman je vais <u> essayer de te dire</u> <del>les sentiments</del> profonds que j'ai <br> envers toi</p>
+                    <hr>
+                    <h3  class="exemple">exemple de listes non ordonnés</h3> 
+                    <p>
+                        <u><i>mes depenses quotidiennes</i></u><br>
+                        <ul style="margin-left:100px;margin-right:100px;>
+                            <li>Banane</li>
+                                <ul>
+                                    <li>                                    sucre mais delicieux
+                                    </li>
+                                </ul>
+                            <li style="color ">pomme</li>
+                                <ul>
+                                    <li>gout special a ne pas rater</li>
+                                </ul>
+                            <li>orange</li>
+                                <ul>
+                                    <li>mon préfèré</li>
+                                </ul>
+                            <li>...</li>
+                        </ul>
+                    </p>
+                    <hr>
+                    <div>
+                    <h3 id="idd">les listes ordonnés</h3>
+                    <p>
+                        <u>
+                            <i>
+                                Mon programme de demain
+
+                            </i>
+                        </u>
+                    </p>
+                    <ol style="margin-left:100px;margin-right:100px;">
+                        <li>je me lève</li>
+                        <li>je me lave</li>
+                        <li>je prends mon petit dejeuner de céélibatire</li>
+                        <li>j'appelle le chef pour la nourriture </li>
+                        <ul>
+                            <li>apprendre à lui connaitre</li>
+                            <li>ne parle pas trop a son egard</li>
+                            <li>je vais demander mes droits</li>
+                        </ul>
+                    </ol>
+                    <hr>
+                <table  border="1"style="margin-left:100px" >
+                        <tr>
+                            <th>prenom</th>
+                            <th>nom</th>
+                            <th>email (tableau)</th>
+                        </tr>
+                        <tr>
+                            <td>Lamine</td>
+                            <td>Diouf</td>
+                            <td>Lamine@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Diarra</td>
+                            <td>Mbaye</td>
+                            <td>diarra@gmail.com</td>
+                        </tr>
+                    </table>
+                    <div style="text-align:center;bottom: none">Pour plus d'information, veulliez-nous contacter sur <a href="index.php" target="_blank"><button>Contact</button></a></div>
+                    <style>
+                         button:hover{
+                            background-color:#a32828;
+                        }
+                    </style>
+                </div>
+                    <hr>
+                    <div>
+                        <h3>div et span</h3>
+                            <div style="border: 1.5px solid #e80d0d;">bonjour les gars ! (div)</div>
+                            <span style="border:1.5px solid #e80d0d">Tout le monde se porte bien ? (span)</span>
+
+                            <h3>Un acteur populaire: Yousso Ndour</h3>
+                            <p>
+                                Il est tellement fort et talentueux
+                            </p>
+                    </div>
+                    <hr>
+                    <h3>Mes blocs</h3>
+                    <div class="bloc">
+                        <div class="green">vert</div>
+                        <div class="blue">bleue</div>
+                        <div class="red">rouge</div>
+                    </div>
+
+                    <button style="margin: 10px; width: 70px" id="butt">validé</button>
+
+                    <style>
+                      .bloc{
+                          
+                           width: auto;
+                           margin: center;
+                           display: flex;
+                           justify-content: center;
+
+                        }
+
+                        .blue,.green,.red{
+                            position:relative;
+                            top: 10px;
+                            height: 100px;
+                            width: 100px;
+                            margin: 10px;
+                            line-height: 100px;
+                            color: #f9f9f9;
+                            font-size: 20px;
+                            font-family: 'Courier New', Courier, monospace;
+                            text-align: center;
+                      
+                        }
+                            .red{
+                           
+                            background-color: red;
+                        }
+
+                        .green{
+                           
+                            background-color: green;
+                            position: relative;
+                        
+                        }
+
+                        .blue{
+                           
+                            background-color:blue;
+                        }
+                        
+                    </style>
+                   
+                   <script>
+                    let buttonjs=document.querySelector("#butt")
+                    //buttonjs.textContent="Votre commande a été bien pris en compte"
+                    buttonjs.addEventListener("click",function(){
+                        alert("Votre commande a été bien pris en compte !")
+                    })
+
+                    fetch('index.php')
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log(data);
+                    })
+                    .catch(error => {
+                        console.error("Il y a un problème :", error);
+                    });
+
+
+                   </script>
+                       
+                  
+    </body>
+    
+</html>
